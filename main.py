@@ -3,13 +3,12 @@ import torch
 import torch.utils.data as data
 import os
 import numpy as np
-from fs800_model_fast_bi import scoring_head, head
-from dataset_fs800 import FeatureDataset, av_collate_fn
+from model import scoring_head, head
+from dataset.dataset_fs800 import FeatureDataset, av_collate_fn
 from scipy.stats import spearmanr 
 import math
 # from torch.optim import lr_sheduler
 # import time
-# import torch.distributed as dist
 # import warnings
 
 dev = 0
